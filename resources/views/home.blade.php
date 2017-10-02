@@ -25,7 +25,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Users</div>
 
                 <div class="panel-body">
                     @if (Session::has('message'))
@@ -53,6 +53,9 @@
                                 </td>
                             </tr>
                             @endforeach
+                            <tr> 
+                                <td colspan="5" style="width: 100%;"><div style="float: right;"><?php echo $user->links(); ?></div></td>
+                            </tr>
                         </tbody>
                     </table>
                     <a class="btn btn-info" href="<?php echo route('add'); ?>"><i class="fa fa-plus" aria-hidden="true"></i></a>

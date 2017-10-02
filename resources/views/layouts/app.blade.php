@@ -17,6 +17,11 @@
     <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
 </head>
 
+<style type="text/css">
+    .help-block{
+        color:red;
+    }
+</style>
 
 <body>
     <div id="app">

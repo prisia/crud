@@ -31,7 +31,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $user = user::all();
+        $user = user::paginate(5);
 
         return view('home')->with('user',$user);
     }

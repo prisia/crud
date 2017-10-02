@@ -34,6 +34,11 @@
                         <div class="form-group">
                             <label>Name :</label>
                             <input type="text" class="form-control" name="name" placeholder="<?php echo $user->name; ?>">
+                            @if ($errors->has('name'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('name') }}</strong>
+                                </span>
+                            @endif
                         </div>
 
                         <div class="form-group">
@@ -47,6 +52,11 @@
                         <div class="form-group">
                             <label>Email :</label>
                             <input type="text" class="form-control" name="email" placeholder="<?php echo $user->email; ?>">
+                            @if ($errors->has('email'))
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
+                            @endif
                         </div>
                     
                         <input type="submit" name="" class="btn btn-success">
