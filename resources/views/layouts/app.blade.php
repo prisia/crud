@@ -15,6 +15,7 @@
     <link href="{{ asset('css/bootstrap-theme.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
 </head>
 
 <style type="text/css">
@@ -85,7 +86,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
